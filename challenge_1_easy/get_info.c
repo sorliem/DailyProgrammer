@@ -10,6 +10,8 @@ int main(int argc, char ** argv) {
 
 	printf("Enter your name > ");
 	fgets(&name, 256, stdin);
+	if ((strlen(name)>0) && (name[strlen (name) - 1] == '\n'))
+        name[strlen (name) - 1] = '\0';
 	printf("Enter your age > ");
 	scanf("%d", &age);
 	printf("Enter your reddit username > ");
