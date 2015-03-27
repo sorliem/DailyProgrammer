@@ -9,7 +9,7 @@ int main(int argc, char ** argv) {
 	int age;
 
 	printf("Enter your name > ");
-	scanf("%s", &name);
+	fgets(&name, 256, stdin);
 	printf("Enter your age > ");
 	scanf("%d", &age);
 	printf("Enter your reddit username > ");
