@@ -2,10 +2,9 @@
 import random as rand
 
 def guess():
-	print("Welcome to the guessing game.\nThink of a number bettween 0 and 100 and I'll try to guess it. Ready?\n\n")
-	guessRange = []
-	for i in range(101):
-		guessRange.append(i)
+	print("Welcome to the guessing game.\nThink of a number bettween 1 and 100 and I'll try to guess it. Ready?\n\n")
+	
+	guessRange = list(range(1,101))
 	while (True):
 		guess = rand.randrange(len(guessRange)) + guessRange[0];
 		print("Guess: " + str(guess))
