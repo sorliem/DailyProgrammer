@@ -13,11 +13,11 @@ int main(int argc, char **argv) {
 	std::cin >> rot;
 
 	for (int i = 0; i < strlen(str); i++) {
-		char newLetter = tolower(str[i]) + rot;
-		if ((int) newLetter > 122) {
-			str[i] = 96 + ((int) newLetter - 122);
+		int newLetter = (int) tolower(str[i]) + rot;
+		if (newLetter > 122) {
+			str[i] = 96 + (newLetter - 122);
 		} else {
-			str[i] = newLetter;
+			str[i] = (char) newLetter;
 		}
 	}
 	std::cout << "converted word: " << str << std::endl;
