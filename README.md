@@ -1,3 +1,5 @@
 # DailyProgrammer Challenges
 
-Taken from http://www.reddit.com/r/dailyprogrammer/wiki/challenges 
+Challenges done from http://www.reddit.com/r/dailyprogrammer/wiki/challenges 
+
+Just for practicing and for trying out new languages.
